@@ -13,7 +13,7 @@ Upload the file to your server and add it.
 
 ### Create A Floating Action Button
 the ```FAB``` class takes 5 parameters:
-- `parent` : The parent element. The parent needs to have a ```position``` style object!
+- `parent` : The parent element. The FAB will be inside of this element.
 - `location` : The four possible options are `FAB.TOPLEFT`, `FAB.TOPRIGHT`, `FAB.BOTTOMLEFT`, `FAB.BOTTOMRIGHT`.
 - `color` : The background color. For example: `'white'` or `'#2b36ff'`.
 - `icon`: The src of the icon that will be displayed inside it.
@@ -21,7 +21,6 @@ the ```FAB``` class takes 5 parameters:
 
 A simple FAB:
 ```javascript
-//The body has a position: relative in its css.
 //add.svg is available
 
 let fab = new FAB(document.body, FAB.BOTTOMRIGHT, '#2b36ff', "add.svg", function(){
